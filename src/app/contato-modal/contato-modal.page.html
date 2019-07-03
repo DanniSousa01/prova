@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ContatoModal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+
+    <ion-card-header>
+      Cadastro
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item>
+        <ion-label>Nome: </ion-label>
+        <ion-input [(ngModel)]="novo_contato.nome"></ion-input>
+      </ion-item>
+
+
+      <ion-item>
+        <img src="{{novo_contato.url}}">
+      </ion-item>
+      <ion-button expand="full" (click)="take_picture()">Take</ion-button>
+
+      <!-- <ion-item>
+        <ion-label>Url: </ion-label>
+        <ion-icon name="camera" slot="end" (click)="take_picture()"></ion-icon>
+        <ion-input [(ngModel)]="novo_contato.url"></ion-input>
+      </ion-item> -->
+
+      <ion-item>
+        <ion-label>ID: </ion-label>
+        <ion-input [(ngModel)]="novo_contato.id"></ion-input>
+      </ion-item>
+
+      <ion-button expand="full" (click)="add()">Vai</ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

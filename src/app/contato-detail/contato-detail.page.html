@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button href='/home'>voltar</ion-button>
+    </ion-buttons>
+    <ion-title>Informações</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-avatar slot="start">
+      <img src="{{contact.url}}" alt="">
+    </ion-avatar>
+    <ion-label>
+      <h2>Nome: {{contact.nome}}</h2>
+      <p>Deixa a vida me levar...</p>
+    </ion-label>
+  </ion-item>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label class="label-back">
+        Oi sumido...
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="label-back-resposta">
+        Opa...
+      </ion-label>
+    </ion-item>
+
+    <ion-item class="item-border">
+      <ion-input placeholder="Nova Mensagem"></ion-input>
+      <ion-icon name="arrow-dropright-circle"></ion-icon>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
